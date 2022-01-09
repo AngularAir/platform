@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-display: fallback;
+  src: local('Ubuntu'), url(https://fonts.gstatic.com/s/ubuntu/v10/4iCs6KVjbNBYlgoKfw72nU6AFw.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-display: fallback;
+  src: local('Ubuntu'), url(https://fonts.gstatic.com/s/ubuntu/v10/4iCv6KVjbNBYlgoCxCvjsGyNPYZvgw.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Bowlby One SC';
+  font-display: fallback;
+  src: local('Bowlby One SC'), url(https://fonts.gstatic.com/s/bowlbyonesc/v10/DtVlJxerQqQm37tzN3wMug9P_g_2oipOnuA.woff2) format('woff2');
+}
+body {
+  font-size: 14pt;
+  color: #353a40;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+h1 {
+  font-family: 'Bowlby One SC', Arial, Helvetica, sans-serif;
+  color: #c5152d;
+  font-size: 72pt;
+  margin: 0;
+  line-height: 5rem;
+  letter-spacing: 0.2rem;
+}
+a {
+  text-decoration: none;
+  color: #353a40;
+}
+a:visited {
+  color: #353a40;
+}
+a:hover {
+  color: #c7152d;
+}
+@media only screen and (max-width: 680px) {
+  h1 {
+    font-size: 42pt;
+  }
+}
+@media only screen and (max-width: 570px) {
+  body {
+    font-size: 0.9rem;
+  }
+  h1 {
+    font-size: 32pt;
+  }
+}
+@media only screen and (max-width: 399px) {
+  h1 {
+    font-size: 24pt;
+  }
+}

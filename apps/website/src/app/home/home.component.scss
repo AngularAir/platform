@@ -1,0 +1,162 @@
+:host {
+  div {
+    max-width: 900px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
+.logo {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.logo > h1 {
+  white-space: nowrap;
+}
+.about {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.about > p {
+  font-size: 1.6rem;
+  text-align: center;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+.avatar-card {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 300px;
+}
+.panelists .avatar-card {
+  width: 200px;
+}
+.avatar-card > img {
+  border-radius: 50%;
+  width: 94%;
+  height: auto;
+  border: 6px solid #bfd9fc;
+  position: relative;
+}
+.avatar-card:hover > img {
+  border-color: #c7152d;
+}
+.avatar-card:hover > p {
+  background-color: #c7152d;
+  color: #fff;
+}
+.avatar-card > p {
+  text-align: center;
+  background-color: #bfd9fc;
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  color: #353a40;
+  padding: 5rem 0 0.6rem 0;
+  margin: -4.8rem 0 0 0;
+  width: 80%;
+  box-shadow: 0 0.25rem 0.125rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.host {
+  margin-top: 4rem;
+}
+.host > h2 {
+  text-align: center;
+}
+
+.panelists {
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.panelists > h2 {
+  flex: 100%;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+.social > h2 {
+  text-align: center;
+}
+.social-card {
+  border-radius: 0.5rem;
+  display: flex;
+  width: 340px;
+  box-shadow: 0 0.25rem 0.125rem 0 rgba(0, 0, 0, 0.1);
+  background-color: #3992db;
+  overflow: hidden;
+}
+.social-card > svg {
+  padding: 1rem;
+  color: #fff;
+}
+.social-card > span {
+  display: flex;
+  align-items: center;
+  background-color: #bfd9fc;
+  color: #353a40;
+  padding-left: 0.5rem;
+  flex: 1 auto;
+  font-size: 1.8rem;
+}
+.social-card:hover > svg {
+  color: #fff;
+}
+.social-card:hover > span {
+  background-color: #c7152d;
+  color: #fff;
+}
+
+@media only screen and (max-width: 920px) {
+  :host {
+    div {
+      max-width: 600px;
+    }
+  }
+  .panelists {
+    max-width: 460px;
+  }
+  .panelists .avatar-card {
+    margin-bottom: 1.2rem;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .logo > img {
+    max-width: 400px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .logo > img {
+    max-width: 300px;
+  }
+  .host .avatar-card {
+    width: 260px;
+  }
+  .panelists {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 399px) {
+  .logo > img {
+    max-width: 240px;
+  }
+  .about > p {
+    font-size: 1.2rem;
+  }
+  .social-card {
+    width: 300px;
+  }
+  .social-card > span {
+    font-size: 1.6rem;
+  }
+}
