@@ -1,0 +1,31 @@
+{
+  // Had to disable the extends, as it was causing some stange placement of the compiled application. I will investigate this further.
+  // when you add some libs, you might need to update this to include them.
+  // "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "runtime/",
+    "target": "es2020",
+    "allowJs": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "lib": [
+      "ES2020",
+      "DOM"
+    ],
+    "types": [
+      "node"
+    ],
+    "moduleResolution": "Node",
+    "module": "ES2020"
+  },
+  "files": [
+    "../apps/website/src/app/app.sps.module.ts"
+  ],
+  "angularCompilerOptions": {
+    "enableIvy": true,
+    "compilationMode": "partial"
+  }
+}
