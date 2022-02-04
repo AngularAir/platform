@@ -1,12 +1,16 @@
-import { ScullyConfig } from '@scullyio/scully';
+import { enableSPS, ScullyConfig, setPluginConfig } from '@scullyio/scully';
 
-/** this loads the default render plugin, remove when switching to something else. */
+/** enable the SPS renderer */
+enableSPS();
+
+/** enable syntax highlighting in the MD plugin */
+setPluginConfig('md', { enableSyntaxHighlighting: true });
 
 
 export const config: ScullyConfig = {
   projectRoot: "./apps/website/src",
   projectName: "website",
-  spsModulePath: 'YOUR OWN MODULE PATH HERE',
+  spsModulePath: './apps/website/src/app/app.sps.module.ts',
   outDir: './dist/static',
   routes: {
     '/article/:title': {

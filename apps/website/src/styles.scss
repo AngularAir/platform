@@ -59,3 +59,7 @@ a:hover {
     font-size: 24pt;
   }
 }
+
+@import '~prismjs/plugins/toolbar/prism-toolbar.css';
+/* check node_modules/prismjs/themes/ for the available themes */
+@import '~prismjs/themes/prism-tomorrow.css';
