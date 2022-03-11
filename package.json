@@ -9,7 +9,8 @@
     "build": "nx build",
     "test": "nx test",
     "scully": "node --experimental-specifier-resolution=node node_modules/.bin/scully --project website",
-    "scully:serve": "npx scully serve"
+    "scully:serve": "npx scully serve",
+    "storybook": "nx run ui-common:storybook"
   },
   "private": true,
   "dependencies": {
