@@ -18,9 +18,9 @@ const Template: Story<UserCoinComponent> = (args: UserCoinComponent) => ({
 export const Primary = Template.bind({});
 Primary.args = {
   user: {
-    fullName: 'Test Person',
-    profileUrl: '',
-    profileImageUrl: '',
-    twitterHandle: 'angularair'
+    fullName: 'Justin Schwartzenberger',
+    profileUrl: 'https://twitter.com/schwarty',
+    profileImageUrl: 'https://pbs.twimg.com/profile_images/1347986955271737344/WKdoxon6_400x400.jpg',
+    twitterHandle: 'schwarty'
   }
 };

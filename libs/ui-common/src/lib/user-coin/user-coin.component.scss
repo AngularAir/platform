@@ -1,5 +1,10 @@
 :host {
+  display: block;
+  width: 200px;
   > a {
+    display: grid;
+    justify-items: center;
+    text-decoration: none;
     > img {
       border-radius: 50%;
       width: 94%;
