@@ -1,0 +1,17 @@
+<form (ngSubmit)="onSubmit(episodeForm['value'])" #episodeForm="ngForm">
+  <div class="form-element">
+    <label for="">Name</label
+    ><input type="text" name="name" [(ngModel)]="name" />
+  </div>
+  <div class="form-element">
+    <label for=""></label><input name="email" type="text" [(ngModel)]="email" />
+  </div>
+  <div class="form-element">
+    <label for=""></label
+    ><input name="twitter" type="text" [(ngModel)]="twitter" />
+  </div>
+  <div class="form-element">
+    <label for=""></label><input name="title" type="text" [(ngModel)]="title" />
+  </div>
+  <button type="submit">Submit</button>
+</form>
