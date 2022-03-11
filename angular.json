@@ -1,6 +1,63 @@
 {
   "version": 1,
   "projects": {
+    "ui-common": {
+      "projectType": "library",
+      "root": "libs/ui-common",
+      "sourceRoot": "libs/ui-common/src",
+      "prefix": "ngair",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui-common/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ui-common/src/**/*.ts",
+              "libs/ui-common/src/**/*.html"
+            ]
+          }
+        },
+        "storybook": {
+          "builder": "@nrwl/storybook:storybook",
+          "options": {
+            "projectBuildConfig": "ui-common:build-storybook",
+            "uiFramework": "@storybook/angular",
+            "port": 4400,
+            "config": {
+              "configFolder": "libs/ui-common/.storybook"
+            }
+          },
+          "configurations": {
+            "ci": {
+              "quiet": true
+            }
+          }
+        },
+        "build-storybook": {
+          "builder": "@nrwl/storybook:build",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "uiFramework": "@storybook/angular",
+            "outputPath": "dist/storybook/ui-common",
+            "config": {
+              "configFolder": "libs/ui-common/.storybook"
+            }
+          },
+          "configurations": {
+            "ci": {
+              "quiet": true
+            }
+          }
+        }
+      },
+      "tags": []
+    },
     "website": {
       "projectType": "application",
       "root": "apps/website",
