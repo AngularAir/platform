@@ -1,6 +1,157 @@
 {
   "version": 1,
   "projects": {
+    "scheduler": {
+      "projectType": "application",
+      "root": "apps/scheduler",
+      "sourceRoot": "apps/scheduler/src",
+      "prefix": "ngair",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/apps/scheduler",
+            "index": "apps/scheduler/src/index.html",
+            "main": "apps/scheduler/src/main.ts",
+            "polyfills": "apps/scheduler/src/polyfills.ts",
+            "tsConfig": "apps/scheduler/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "apps/scheduler/src/favicon.ico",
+              "apps/scheduler/src/assets"
+            ],
+            "styles": ["apps/scheduler/src/styles.scss"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "apps/scheduler/src/environments/environment.ts",
+                  "with": "apps/scheduler/src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "scheduler:build:production"
+            },
+            "development": {
+              "browserTarget": "scheduler:build:development"
+            }
+          },
+          "defaultConfiguration": "development",
+          "options": {
+            "port": 4201
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "scheduler:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/scheduler/src/**/*.ts",
+              "apps/scheduler/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/scheduler"],
+          "options": {
+            "jestConfig": "apps/scheduler/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "scheduler-e2e": {
+      "root": "apps/scheduler-e2e",
+      "sourceRoot": "apps/scheduler-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/scheduler-e2e/cypress.json",
+            "devServerTarget": "scheduler:serve:development"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "scheduler:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/scheduler-e2e/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["scheduler"]
+    },
+    "scheduler-feature-episode-request": {
+      "projectType": "library",
+      "root": "libs/scheduler/feature-episode-request",
+      "sourceRoot": "libs/scheduler/feature-episode-request/src",
+      "prefix": "aa",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/scheduler/feature-episode-request"],
+          "options": {
+            "jestConfig": "libs/scheduler/feature-episode-request/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/scheduler/feature-episode-request/src/**/*.ts",
+              "libs/scheduler/feature-episode-request/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
     "ui-common": {
       "projectType": "library",
       "root": "libs/ui-common",
