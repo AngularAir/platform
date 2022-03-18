@@ -1,0 +1,11 @@
+@import 'libs/ui-common/src/lib/common-styles.scss';
+
+button {
+  color: white;
+  background-color: #c5152d;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px;
+  text-transform: capitalize;
+}

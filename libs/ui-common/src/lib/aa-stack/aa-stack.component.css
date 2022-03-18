@@ -1,0 +1,10 @@
+section.stack {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  /* gap should be a globally defined & passed in parameter (but with a default) */
+}
+
+section.stack[vertical] {
+  flex-direction: column;
+}

@@ -1,0 +1,83 @@
+
+// @import 'src/lib/common-styles.scss';
+// but we shouldn't do it this way? bc resusability? Should pass it in through the component? Also, storybook error... halp
+
+// once happy with colors, move to reusable spot, ho
+
+@import 'libs/ui-common/src/lib/common-styles.scss';
+
+a {
+  font-size: 10px;
+  font-weight: 700;
+  color: #835151;
+  transition: color .3s ease;
+  &:hover {
+    color: #523131;
+  }
+  &:active {
+    color: #c5152d;
+  }
+}
+
+
+[element="main"] {
+  padding: 40px 20px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  position: relative;
+}
+
+[element="main"] > * {
+  // position: relative;
+  z-index: 3;
+}
+
+[element="main"]:before {
+  content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+      45deg,
+      hsl(240deg 100% 20%) 0%,
+      hsl(289deg 100% 21%) 11%,
+      hsl(315deg 100% 27%) 22%,
+      hsl(329deg 100% 36%) 33%,
+      hsl(337deg 100% 43%) 44%,
+      hsl(357deg 91% 59%) 56%,
+      hsl(17deg 100% 59%) 67%,
+      hsl(34deg 100% 53%) 78%,
+      hsl(45deg 100% 50%) 89%,
+      hsl(55deg 100% 50%) 100%
+    );
+    border-radius: 7px;
+    z-index: 0;
+}
+
+[element="main"]:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    border-radius: 5px;
+    background: #fbfbfb;
+    z-index: 1;
+}
+
+label {
+  font-weight: 900;
+  color: #c5152d;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #343a40;
+}
