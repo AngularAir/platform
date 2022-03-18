@@ -1,6 +1,7 @@
 import { Component, OnInit, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AAStackComponentModule } from '../aa-stack/aa-stack.component';
+import { AaButtonComponentModule } from '../aa-button/aa-button.component';
 
 @Component({
   selector: 'ngair-episode-details',
@@ -14,7 +15,7 @@ export class EpisodeDetailsComponent implements OnInit {
 }
 
 @NgModule({
-  imports: [CommonModule, AAStackComponentModule],
+  imports: [CommonModule, AAStackComponentModule, AaButtonComponentModule],
   declarations: [EpisodeDetailsComponent],
   exports: [EpisodeDetailsComponent],
 })

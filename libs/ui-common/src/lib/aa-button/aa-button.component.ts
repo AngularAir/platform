@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'ngair-aa-button',
   templateUrl: './aa-button.component.html',
-  styleUrls: ['./aa-button.component.css'],
+  styleUrls: ['./aa-button.component.scss'],
 })
 export class AaButtonComponent implements OnInit {
   constructor() {}

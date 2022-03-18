@@ -4,12 +4,7 @@
 
 // once happy with colors, move to reusable spot, ho
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
-
-* {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-}
+@import 'libs/ui-common/src/lib/common-styles.scss';
 
 a {
   font-size: 10px;
