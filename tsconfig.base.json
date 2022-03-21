@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@ngair/scheduler/feature-episode-request": [
+        "libs/scheduler/feature-episode-request/src/index.ts"
+      ],
       "@ngair/ui-common": ["libs/ui-common/src/index.ts"]
     }
   },
