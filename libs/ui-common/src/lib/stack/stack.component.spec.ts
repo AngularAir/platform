@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AaButtonComponent } from './aa-button.component';
+import { StackComponent } from './stack.component';
 
-describe('AaButtonComponent', () => {
-  let component: AaButtonComponent;
-  let fixture: ComponentFixture<AaButtonComponent>;
+describe('StackComponent', () => {
+  let component: StackComponent;
+  let fixture: ComponentFixture<StackComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AaButtonComponent],
+      declarations: [StackComponent],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AaButtonComponent);
+    fixture = TestBed.createComponent(StackComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

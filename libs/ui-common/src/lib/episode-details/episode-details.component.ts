@@ -1,21 +1,18 @@
-import { Component, OnInit, NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AAStackComponentModule } from '../aa-stack/aa-stack.component';
-import { AaButtonComponentModule } from '../aa-button/aa-button.component';
+import { StackComponentModule } from '../stack/stack.component';
+import { ButtonComponentModule } from '../button/button.component';
 
 @Component({
   selector: 'ngair-episode-details',
   templateUrl: './episode-details.component.html',
   styleUrls: ['./episode-details.component.scss'],
 })
-export class EpisodeDetailsComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
+export class EpisodeDetailsComponent {
 }
 
 @NgModule({
-  imports: [CommonModule, AAStackComponentModule, AaButtonComponentModule],
+  imports: [CommonModule, StackComponentModule, ButtonComponentModule],
   declarations: [EpisodeDetailsComponent],
   exports: [EpisodeDetailsComponent],
 })

@@ -1,17 +1,17 @@
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
-import { AAStackComponent } from './aa-stack.component';
+import { StackComponent } from './stack.component';
 
 export default {
-  title: 'AAStackComponent',
-  component: AAStackComponent,
+  title: 'StackComponent',
+  component: StackComponent,
   decorators: [
     moduleMetadata({
       imports: [],
     })
   ],
-} as Meta<AAStackComponent>;
+} as Meta<StackComponent>;
 
-const Template: Story<AAStackComponent> = (args: AAStackComponent) => ({
+const Template: Story<StackComponent> = (args: StackComponent) => ({
   props: args,
 });
 

@@ -1,18 +1,18 @@
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
-import { AASocialLinksComponent } from './aa-social-links.component';
+import { SocialLinksComponent } from './social-links.component';
 
 export default {
-  title: 'AASocialLinksComponent',
-  component: AASocialLinksComponent,
+  title: 'SocialLinksComponent',
+  component: SocialLinksComponent,
   decorators: [
     moduleMetadata({
       imports: [],
     })
   ],
-} as Meta<AASocialLinksComponent>;
+} as Meta<SocialLinksComponent>;
 
-const Template: Story<AASocialLinksComponent> = (args: AASocialLinksComponent) => ({
-  // component: AASocialLinksComponent,
+const Template: Story<SocialLinksComponent> = (args: SocialLinksComponent) => ({
+  // component: SocialLinksComponent,
   props: args,
 });
 

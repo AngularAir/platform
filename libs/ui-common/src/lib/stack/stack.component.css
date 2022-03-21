@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* gap should be a globally defined & passed in parameter (but with a default) */
+}
+
+:host.horizontal {
+  flex-direction: row;
+   /* play around with grid's justify-self */
+}

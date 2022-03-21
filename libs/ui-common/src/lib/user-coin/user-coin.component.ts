@@ -9,7 +9,7 @@ export interface User {
 }
 
 @Component({
-  selector: 'ngair-user-coin',
+  selector: 'aa-user-coin',
   templateUrl: './user-coin.component.html',
   styleUrls: ['./user-coin.component.scss'],
 })

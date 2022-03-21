@@ -1,0 +1,36 @@
+@import 'libs/ui-common/src/lib/common-styles.scss';
+
+$aa-red: #c5152d;
+
+.button[yyuh]:after {
+  color: blue;
+}
+
+:host {
+  color: white;
+  background-color: $red;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px;
+  text-transform: capitalize;
+  transition: background-color .2s ease;
+  &:hover {
+    background-color: scale-color($color: $aa-red, $lightness: -10%);
+  }
+
+}
+
+
+// FANCY Styles
+// for unique "buttons"
+
+:host {
+  display: flex;
+  align-items: center;
+  gap: $squirrel;
+  ::ng-deep icon {
+    display: block;
+    width: 20px;
+  }
+}

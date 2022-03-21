@@ -1,37 +1,35 @@
 <!-- TODO: separate out our individual elements to their own stories/components -->
 
-<aa-stack element="main">
+<main element="main">
 
-  <aa-stack vertical>
+  <aa-stack>
     <label>Email</label>
     <ul>
       <li>testing@testing.com</li>
     </ul>
   </aa-stack>
 
-  <aa-stack vertical>
+  <aa-stack>
     <label>StreamYard Link</label>
     <a href="">streamyard.com/link</a>
   </aa-stack>
 
-  <aa-stack vertical>
+  <aa-stack>
     <label>Invitee Time Zone</label>
     <p>Invitee Time Zone</p>
   </aa-stack>
 
-  <aa-stack vertical>
+  <aa-stack>
     <label>Additional Notes</label>
-    <p>Dolor sit amet consectetur adipiscing. Quam id leo in vitae turpis massa sed. Adipiscing diam donec adipiscing
-      tristique
-      risus nec. Facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris.</p>
+    <p>Dolor sit amet consectetur adipiscing. Quam id leo in vitae turpis massa sed. Adipiscing diam donec adipiscing tristique risus nec. Facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris.</p>
   </aa-stack>
 
-  <aa-stack vertical>
+  <aa-stack>
     <label>Episode Title/Topic</label>
     <p>Storybook, NX, & Angular</p>
   </aa-stack>
 
-  <aa-stack vertical>
+  <aa-stack>
     <label>Tags</label>
     <ul>
       <li>Angular</li>
@@ -41,7 +39,8 @@
     </ul>
   </aa-stack>
 
-  <aa-stack vertical>
+  <!-- ALYSSA TODO: pass in element type and stack direction -->
+  <aa-stack>
     <label>Available Hosts/Panelists</label>
     <ul>
       <li><a href="twitter.com/schwarty">Justin</a></li>
@@ -50,14 +49,14 @@
     </ul>
   </aa-stack>
 
-  <aa-stack vertical>
+  <aa-stack>
     <label>Created On</label>
     <p>Jan. 14th 2022</p>
   </aa-stack>
 
-  <aa-stack>
-    <aa-button>Reschedule</aa-button>
-    <aa-button>Cancel</aa-button>
+  <aa-stack element="div" class="horizontal">
+    <button aa-button>Reschedule</button>
+    <button aa-button>Cancel</button>
   </aa-stack>
 
-</aa-stack>
+</main>

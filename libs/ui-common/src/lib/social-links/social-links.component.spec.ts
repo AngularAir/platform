@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AAStackComponent } from './aa-stack.component';
+import { SocialLinksComponent } from './social-links.component';
 
-describe('AAStackComponent', () => {
-  let component: AAStackComponent;
-  let fixture: ComponentFixture<AAStackComponent>;
+describe('SocialLinksComponent', () => {
+  let component: SocialLinksComponent;
+  let fixture: ComponentFixture<SocialLinksComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AAStackComponent],
+      declarations: [SocialLinksComponent],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AAStackComponent);
+    fixture = TestBed.createComponent(SocialLinksComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

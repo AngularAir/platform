@@ -1,9 +1,30 @@
+// @import 'src/lib/reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
 // aa colors
 $red: #c5152d;
+$light-blue: #bfd9fc;
+$blue: #3992db;
+$grey: #dedede;
+$dark-grey: #343a40;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+// aa sizes
+$squirrel: 16px;
+$rabbit: 20px;
+$dog: 24px;
+$bear: 44px;
+$whale: 72px;
+
 
 * {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: 'Bowlby One SC',Arial,Helvetica,sans-serif;
+  color: $red;
+  font-size: $whale;
+  margin: 0;
 }
