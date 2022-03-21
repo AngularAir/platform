@@ -1,9 +1,3 @@
-
-// @import 'src/lib/common-styles.scss';
-// but we shouldn't do it this way? bc resusability? Should pass it in through the component? Also, storybook error... halp
-
-// once happy with colors, move to reusable spot, ho
-
 @import 'libs/ui-common/src/lib/common-styles.scss';
 
 a {
