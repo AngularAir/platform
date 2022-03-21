@@ -27,8 +27,6 @@ WithLongText.args = {
   innerContent: 'Default Button Y3333333333333333333333T'
 }
 
-}
-
 // export const Fancy = Template.bind({});
 // Fancy.args = {
 //   innerContent: `<icon><svg class="svg-inline--fa fa-twitter-square fa-w-14 fa-2x" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
