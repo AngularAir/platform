@@ -12,16 +12,16 @@
         "@angular-eslint/directive-selector": [
           "error",
           {
-            "type": "attribute",
-            "prefix": "ngair",
+            "type": "element",
+            "prefix": "aa",
             "style": "camelCase"
           }
         ],
         "@angular-eslint/component-selector": [
           "error",
           {
-            "type": "element",
-            "prefix": "ngair",
+            "type": ["element", "attribute"],
+            "prefix": "aa",
             "style": "kebab-case"
           }
         ]
