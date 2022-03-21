@@ -1,0 +1,8 @@
+@import 'libs/ui-common/src/lib/common-styles.scss';
+
+:host {
+  font-size: $dog;
+  color: $dark-grey;
+  display: flex;
+  font-family: 'Ubuntu', sans-serif;
+}

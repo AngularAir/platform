@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { StackComponentModule } from '../stack/stack.component';
 import { ButtonComponentModule } from '../button/button.component';
+import { InputComponentModule } from '../input/input.component';
 
 export interface Episode {
   name: string;
@@ -44,7 +45,7 @@ export class EpisodeFormComponent {
 }
 
 @NgModule({
-  imports: [CommonModule, FormsModule, StackComponentModule, ButtonComponentModule],
+  imports: [CommonModule, FormsModule, StackComponentModule, ButtonComponentModule, InputComponentModule],
   declarations: [EpisodeFormComponent],
   exports: [EpisodeFormComponent],
 })
