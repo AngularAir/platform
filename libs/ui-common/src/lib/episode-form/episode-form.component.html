@@ -1,17 +1,17 @@
-<form (ngSubmit)="onSubmit(episodeForm['value'])" #episodeForm="ngForm">
-  <div class="form-element">
+<form (ngSubmit)="onSubmit(episodeForm['value'])" #episodeForm="ngForm" aa-stack>
+  <div aa-stack>
     <label for="">Name</label
     ><input type="text" name="name" [(ngModel)]="name" />
   </div>
-  <div class="form-element">
+  <div aa-stack>
     <label for=""></label><input name="email" type="text" [(ngModel)]="email" />
   </div>
-  <div class="form-element">
+  <div aa-stack>
     <label for=""></label
     ><input name="twitter" type="text" [(ngModel)]="twitter" />
   </div>
-  <div class="form-element">
+  <div aa-stack>
     <label for=""></label><input name="title" type="text" [(ngModel)]="title" />
   </div>
-  <button type="submit">Submit</button>
+  <button type="submit" aa-button>Submit</button>
 </form>

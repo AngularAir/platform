@@ -7,6 +7,8 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { StackComponentModule } from '../stack/stack.component';
+import { ButtonComponentModule } from '../button/button.component';
 
 export interface Episode {
   name: string;
@@ -42,7 +44,7 @@ export class EpisodeFormComponent {
 }
 
 @NgModule({
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, StackComponentModule, ButtonComponentModule],
   declarations: [EpisodeFormComponent],
   exports: [EpisodeFormComponent],
 })
