@@ -2,10 +2,6 @@
 
 $aa-red: #c5152d;
 
-.button[yyuh]:after {
-  color: blue;
-}
-
 :host {
   color: white;
   background-color: $red;
@@ -18,7 +14,6 @@ $aa-red: #c5152d;
   &:hover {
     background-color: scale-color($color: $aa-red, $lightness: -10%);
   }
-
 }
 
 
