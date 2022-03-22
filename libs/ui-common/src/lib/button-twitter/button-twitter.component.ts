@@ -1,10 +1,5 @@
 import { ButtonComponentModule } from './../button/button.component';
-import {
-  Component,
-  ChangeDetectionStrategy,
-  NgModule,
-  Input,
-} from '@angular/core';
+import { Component, ChangeDetectionStrategy, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -13,9 +8,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./button-twitter.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ButtonTwitterComponent {
-  @Input() test = '';
-}
+export class ButtonTwitterComponent {}
 
 @NgModule({
   imports: [CommonModule, ButtonComponentModule],
