@@ -1,8 +1,8 @@
 @import 'libs/ui-common/src/lib/common-styles.scss';
 
 :host {
-  font-size: $dog;
   color: $dark-grey;
-  display: flex;
+  font-size: $mouse;
+  font-weight: 900;
   font-family: 'Roboto', sans-serif;
 }

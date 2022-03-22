@@ -6,7 +6,7 @@ import { ButtonComponentModule } from '../button/button.component';
 @Component({
   selector: 'ngair-episode-details',
   templateUrl: './episode-details.component.html',
-  styleUrls: ['./episode-details.component.scss'],
+  styleUrls: ['./episode-details.component.scss']
 })
 export class EpisodeDetailsComponent {
 }

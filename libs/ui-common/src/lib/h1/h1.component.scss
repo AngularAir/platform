@@ -1,0 +1,17 @@
+@import 'libs/ui-common/src/lib/common-styles.scss';
+
+// @import 'src/lib/reset.css';
+
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  color: rebeccapurple;
+  font-size: $bear;
+  margin: 0;
+}
+
+h1.fancy {
+  font-family: 'Bowlby One SC', Arial, Helvetica, sans-serif;
+  color: $red;
+  font-size: $whale;
+}

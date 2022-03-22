@@ -1,5 +1,5 @@
 // @import 'src/lib/reset.css';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Roboto:wght@100;400;900&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
 // aa colors
 $red: #c5152d;
@@ -7,24 +7,29 @@ $light-blue: #bfd9fc;
 $blue: #3992db;
 $grey: #dedede;
 $dark-grey: #343a40;
-
+$white: #f2f2f2;
 
 // aa sizes
+$virus: 1px;
+$mouse: 12px;
+$hamster: 14px;
 $squirrel: 16px;
 $rabbit: 20px;
 $dog: 24px;
 $bear: 44px;
 $whale: 72px;
 
-
-* {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 16px;
+label {
+  font-size: $mouse;
+  font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-  font-family: 'Bowlby One SC',Arial,Helvetica,sans-serif;
-  color: $red;
-  font-size: $whale;
-  margin: 0;
+input {
+  font-size: $dog;
+  font-family: 'Roboto', sans-serif;
+}
+
+p, div {
+  font-size: $squirrel;
+  font-family: 'Ubuntu', sans-serif;
 }
