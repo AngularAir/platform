@@ -152,6 +152,58 @@
       },
       "tags": []
     },
+    "scheduler-feature-home": {
+      "projectType": "library",
+      "root": "libs/scheduler/feature-home",
+      "sourceRoot": "libs/scheduler/feature-home/src",
+      "prefix": "ngair",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/scheduler/feature-home"],
+          "options": {
+            "jestConfig": "libs/scheduler/feature-home/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/scheduler/feature-home/src/**/*.ts",
+              "libs/scheduler/feature-home/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+    "scheduler-services-common": {
+      "projectType": "library",
+      "root": "libs/scheduler/services-common",
+      "sourceRoot": "libs/scheduler/services-common/src",
+      "prefix": "ngair",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/scheduler/services-common"],
+          "options": {
+            "jestConfig": "libs/scheduler/services-common/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/scheduler/services-common/src/**/*.ts",
+              "libs/scheduler/services-common/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
     "ui-common": {
       "projectType": "library",
       "root": "libs/ui-common",

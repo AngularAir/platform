@@ -18,6 +18,12 @@
       "@ngair/scheduler/feature-episode-request": [
         "libs/scheduler/feature-episode-request/src/index.ts"
       ],
+      "@ngair/scheduler/feature-home": [
+        "libs/scheduler/feature-home/src/index.ts"
+      ],
+      "@ngair/scheduler/services-common": [
+        "libs/scheduler/services-common/src/index.ts"
+      ],
       "@ngair/ui-common": ["libs/ui-common/src/index.ts"]
     }
   },
