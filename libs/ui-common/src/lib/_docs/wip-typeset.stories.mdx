@@ -1,0 +1,150 @@
+import { Meta, Typeset } from '@storybook/addon-docs/blocks';
+
+<Meta title="Typography" />
+
+export const virus: 1;
+export const mouse: 12;
+export const hamster: 14;
+export const squirrel: 16;
+export const rabbit: 20;
+export const dog: 24;
+export cosnt lynx: 28;
+export const deer: 32;
+export const bear: 44;
+export const moose: 48;
+export const whale: 72;
+
+export const specialType = {
+  type: {
+    primary: '"Bowlby", sans-serif',
+  },
+  weight: {
+    regular: '400',
+  },
+  size: {
+    s1: mouse,
+    s2: hamster,
+    s3: squirrel,
+    m1: rabbit,
+    m2: dog,
+    m3: lynx,
+    l1: deer,
+    l2: bear,
+    l3: moose,
+  },
+};
+
+export const specialTypeII = {
+  type: {
+    primary: '"Ubuntu", sans-serif',
+  },
+  weight: {
+    italic: '300',
+    regular: '400',
+    bold: '700',
+  },
+  size: {
+    s1: mouse,
+    s2: hamster,
+    s3: squirrel,
+    m1: rabbit,
+    m2: dog,
+    m3: lynx,
+    l1: deer,
+    l2: bear,
+    l3: moose,
+  },
+};
+
+export const basicType = {
+  type: {
+    primary: '"Roboto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  },
+  weight: {
+    light: '100',
+    regular: '400',
+    extrabold: '900',
+  },
+  size: {
+    s1: mouse,
+    s2: hamster,
+    s3: squirrel,
+    m1: rabbit,
+    m2: dog,
+    m3: lynx,
+    l1: deer,
+    l2: bear,
+    l3: moose,
+  },
+};
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+
+# Specialized Type
+
+**Font:** Bowlby
+
+**Weights:** 400(regular)
+
+<Typeset
+  fontSizes={[
+    Number(specialType.size.s1),
+    Number(specialType.size.s2),
+    Number(specialType.size.s3),
+    Number(specialType.size.m1),
+    Number(specialType.size.m2),
+    Number(specialType.size.m3),
+    Number(specialType.size.l1),
+    Number(specialType.size.l2),
+    Number(specialType.size.l3),
+  ]}
+  fontWeight={specialType.weight.black}
+  sampleText={SampleText}
+  fontFamily={specialType.type.primary}
+/>
+
+# Specialized Type II
+
+**Font:** Ubunutu
+
+**Weights:** 300(italic), 400(regular), 700(bold)
+
+<Typeset
+  fontSizes={[
+    Number(specialTypeII.size.s1),
+    Number(specialTypeII.size.s2),
+    Number(specialTypeII.size.s3),
+    Number(specialTypeII.size.m1),
+    Number(specialTypeII.size.m2),
+    Number(specialTypeII.size.m3),
+    Number(specialTypeII.size.l1),
+    Number(specialTypeII.size.l2),
+    Number(specialTypeII.size.l3),
+  ]}
+  fontWeight={specialTypeII.weight.black}
+  sampleText={SampleText}
+  fontFamily={specialTypeII.type.primary}
+/>
+
+# Basic Type
+
+**Font:** Roboto Sans
+
+**Weights:** 100(light), 400(regular), 900(extrabold)
+
+<Typeset
+  fontSizes={[
+    Number(basicType.size.s1),
+    Number(basicType.size.s2),
+    Number(basicType.size.s3),
+    Number(basicType.size.m1),
+    Number(basicType.size.m2),
+    Number(basicType.size.m3),
+    Number(basicType.size.l1),
+    Number(basicType.size.l2),
+    Number(basicType.size.l3),
+  ]}
+  fontWeight={basicType.weight.black}
+  sampleText={SampleText}
+  fontFamily={basicType.type.primary}
+/>
