@@ -1,5 +1,6 @@
-module.exports = {
-  displayName: 'scheduler-feature-home',
+/* eslint-disable */
+export default {
+  displayName: 'scheduler-feature-episode-request',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -8,7 +9,7 @@ module.exports = {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../coverage/libs/scheduler/feature-home',
+  coverageDirectory: '../../../coverage/libs/scheduler/feature-episode-request',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

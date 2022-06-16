@@ -2,6 +2,7 @@
   "version": 1,
   "projects": {
     "scheduler": {
+      "$schema": "../../node_modules/nx/schemas/project-schema.json",
       "projectType": "application",
       "root": "apps/scheduler",
       "sourceRoot": "apps/scheduler/src",
@@ -91,7 +92,7 @@
           "builder": "@nrwl/jest:jest",
           "outputs": ["coverage/apps/scheduler"],
           "options": {
-            "jestConfig": "apps/scheduler/jest.config.js",
+            "jestConfig": "apps/scheduler/jest.config.ts",
             "passWithNoTests": true
           }
         }
@@ -99,6 +100,7 @@
       "tags": []
     },
     "scheduler-e2e": {
+      "$schema": "../../node_modules/nx/schemas/project-schema.json",
       "root": "apps/scheduler-e2e",
       "sourceRoot": "apps/scheduler-e2e/src",
       "projectType": "application",
@@ -127,6 +129,7 @@
       "implicitDependencies": ["scheduler"]
     },
     "scheduler-feature-episode-request": {
+      "$schema": "../../../node_modules/nx/schemas/project-schema.json",
       "projectType": "library",
       "root": "libs/scheduler/feature-episode-request",
       "sourceRoot": "libs/scheduler/feature-episode-request/src",
@@ -136,7 +139,7 @@
           "builder": "@nrwl/jest:jest",
           "outputs": ["coverage/libs/scheduler/feature-episode-request"],
           "options": {
-            "jestConfig": "libs/scheduler/feature-episode-request/jest.config.js",
+            "jestConfig": "libs/scheduler/feature-episode-request/jest.config.ts",
             "passWithNoTests": true
           }
         },
@@ -153,6 +156,7 @@
       "tags": []
     },
     "scheduler-feature-home": {
+      "$schema": "../../../node_modules/nx/schemas/project-schema.json",
       "projectType": "library",
       "root": "libs/scheduler/feature-home",
       "sourceRoot": "libs/scheduler/feature-home/src",
@@ -162,7 +166,7 @@
           "builder": "@nrwl/jest:jest",
           "outputs": ["coverage/libs/scheduler/feature-home"],
           "options": {
-            "jestConfig": "libs/scheduler/feature-home/jest.config.js",
+            "jestConfig": "libs/scheduler/feature-home/jest.config.ts",
             "passWithNoTests": true
           }
         },
@@ -179,6 +183,7 @@
       "tags": []
     },
     "scheduler-services-common": {
+      "$schema": "../../../node_modules/nx/schemas/project-schema.json",
       "projectType": "library",
       "root": "libs/scheduler/services-common",
       "sourceRoot": "libs/scheduler/services-common/src",
@@ -188,7 +193,7 @@
           "builder": "@nrwl/jest:jest",
           "outputs": ["coverage/libs/scheduler/services-common"],
           "options": {
-            "jestConfig": "libs/scheduler/services-common/jest.config.js",
+            "jestConfig": "libs/scheduler/services-common/jest.config.ts",
             "passWithNoTests": true
           }
         },
@@ -205,6 +210,7 @@
       "tags": []
     },
     "ui-common": {
+      "$schema": "../../node_modules/nx/schemas/project-schema.json",
       "projectType": "library",
       "root": "libs/ui-common",
       "sourceRoot": "libs/ui-common/src",
@@ -213,7 +219,7 @@
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/ui-common/jest.config.js",
+            "jestConfig": "libs/ui-common/jest.config.ts",
             "passWithNoTests": true
           }
         },
@@ -262,6 +268,7 @@
       "tags": []
     },
     "website": {
+      "$schema": "../../node_modules/nx/schemas/project-schema.json",
       "projectType": "application",
       "root": "apps/website",
       "sourceRoot": "apps/website/src",
@@ -346,13 +353,14 @@
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "apps/website/jest.config.js",
+            "jestConfig": "apps/website/jest.config.ts",
             "passWithNoTests": true
           }
         }
       }
     },
     "website-e2e": {
+      "$schema": "../../node_modules/nx/schemas/project-schema.json",
       "root": "apps/website-e2e",
       "sourceRoot": "apps/website-e2e/src",
       "projectType": "application",
